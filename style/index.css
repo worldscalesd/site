@@ -1,0 +1,554 @@
+/* Importação de Variáveis e Padrões */
+@import url('main.css');
+@import url('menu.css'); /* Importar menu para garantir precedência ou em cascata */
+
+/*
+|--------------------------------------------------------------------------
+| 1. HERO SECTION (Banner)
+|--------------------------------------------------------------------------
+*/
+.wsd-hero-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    overflow: hidden; /* Para conter os blobs */
+}
+
+.wsd-hero-content {
+    max-width: 800px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+}
+
+.wsd-headline {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.wsd-title-line { display: block; }
+.wsd-title-line-dark {
+    display: block;
+    color: var(--color-bg-dark);
+}
+
+.wsd-subhead {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.wsd-highlight {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Banner de Promoção */
+.wsd-banner-promo {
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.wsd-promo-tag {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-right: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.wsd-promo-text {
+    margin: 0;
+    color: var(--color-text-default);
+}
+
+.wsd-icon-arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-secondary);
+    margin-left: 0.5rem;
+}
+
+/* Decoradores Sutis (Blobs) */
+.wsd-bg-decorator {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.wsd-blob {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.wsd-blob-blue {
+    background-color: var(--color-primary);
+    top: 10%;
+    left: 80%;
+}
+
+.wsd-blob-purple {
+    background-color: var(--color-secondary);
+    top: 90%;
+    left: 20%;
+}
+
+/* Animação para os blobs */
+@keyframes animate-blob {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-45%, -55%) scale(1.1); }
+}
+
+.animate-blob { animation: animate-blob 12s ease-in-out infinite alternate; }
+.animation-delay-4000 { animation-delay: 4s; }
+
+
+@media (min-width: 768px) {
+    .wsd-headline { font-size: 4.5rem; }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2. SEÇÃO FILOSOFIA (Feature Cards)
+|--------------------------------------------------------------------------
+*/
+.wsd-section-philosophy {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-light);
+}
+
+.wsd-section-title {
+    margin-bottom: var(--spacing-lg);
+}
+
+.wsd-feature-grid {
+    padding-top: var(--spacing-md);
+}
+
+.wsd-feature-card {
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.wsd-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wsd-icon {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.wsd-icon-blue { background-color: var(--color-primary); }
+.wsd-icon-green { background-color: var(--color-accent); }
+.wsd-icon-purple { background-color: var(--color-secondary); }
+
+.wsd-feature-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.wsd-feature-text {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 3. SEÇÃO SOLUÇÕES (Product Cards)
+|--------------------------------------------------------------------------
+*/
+.wsd-section-solutions {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.wsd-section-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+.wsd-product-grid {
+    padding-top: var(--spacing-md);
+}
+
+.wsd-product-card {
+    background-color: var(--color-bg-light);
+    border-radius: var(--border-radius-default);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.wsd-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wsd-product-header {
+    margin-bottom: 1rem;
+}
+
+.wsd-product-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.wsd-product-icon .wsd-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.wsd-product-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Cores de Ícones Específicas */
+.wsd-icon-red { background-color: #ef4444; }
+.wsd-icon-blue-light { background-color: #3b82f6; }
+.wsd-icon-green-light { background-color: #10b981; }
+
+.wsd-product-description {
+    color: var(--color-text-default);
+    min-height: 4.5rem; /* Altura mínima para alinhamento */
+}
+
+.wsd-specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.wsd-specs-item {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.wsd-specs-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-accent);
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.wsd-details-link {
+    color: var(--color-secondary);
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 4. SEÇÃO JORNADA (Timeline)
+|--------------------------------------------------------------------------
+*/
+.wsd-section-journey {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+.wsd-section-journey .wsd-section-title {
+    color: var(--color-text-light);
+}
+
+.wsd-section-journey .wsd-section-subtitle {
+    color: var(--color-text-muted);
+}
+
+.wsd-tagline {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.wsd-journey-timeline {
+    max-width: 900px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+/* Estilo para Mobile (Stack Vertical) */
+.wsd-timeline-step {
+    text-align: left;
+    margin-left: 2.5rem;
+    padding-bottom: var(--spacing-lg);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 1.5rem;
+}
+
+.wsd-timeline-step:last-child {
+    padding-bottom: 0;
+    border-left: none;
+}
+
+.wsd-step-number {
+    position: absolute;
+    left: -18px;
+    top: 0.25rem;
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: 4px solid var(--color-bg-dark);
+}
+
+.wsd-step-title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.wsd-step-description {
+    color: var(--color-text-muted);
+    margin-bottom: 0;
+}
+
+/* Estilo para Desktop (Horizontal) */
+@media (min-width: 768px) {
+    .wsd-journey-timeline {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wsd-timeline-connector {
+        top: 25px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .wsd-timeline-step {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        border-left: none;
+        text-align: center;
+        padding-top: 50px; /* Espaço para o conector/número */
+    }
+
+    .wsd-timeline-step:last-child {
+        border-left: none;
+    }
+
+    .wsd-step-number {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -18px;
+        border: 4px solid var(--color-bg-dark);
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 5. SEÇÃO CTA (Newsletter)
+|--------------------------------------------------------------------------
+*/
+.wsd-section-cta {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-light);
+}
+
+.wsd-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wsd-cta-headline {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.wsd-cta-subhead {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+}
+
+.wsd-cta-form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid var(--color-primary);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.wsd-form-input {
+    flex-grow: 1;
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: var(--color-text-default);
+    min-width: 0;
+}
+
+.wsd-form-button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.wsd-form-button:hover {
+    background-color: var(--color-secondary);
+}
+
+.wsd-privacy-note {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .wsd-cta-form {
+        flex-direction: column;
+        border-radius: var(--border-radius-default);
+        border: none;
+        gap: 1rem;
+    }
+    
+    .wsd-form-input {
+        border: 2px solid var(--color-primary);
+        border-radius: var(--border-radius-default);
+        text-align: center;
+    }
+    
+    .wsd-form-button {
+        border-radius: var(--border-radius-default);
+        padding: 1rem 1.5rem;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 6. FOOTER
+|--------------------------------------------------------------------------
+*/
+.wsd-footer {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+    padding-top: var(--spacing-xl);
+}
+
+.wsd-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    padding-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .wsd-footer-grid {
+        grid-template-columns: 2fr repeat(3, 1fr);
+    }
+}
+
+.wsd-brand-logo-footer {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    display: block;
+    color: var(--color-text-light);
+}
+
+.wsd-logo-white { color: white; }
+.wsd-logo-blue { 
+    color: var(--color-secondary); 
+    transition: color 0.2s;
+}
+.wsd-brand-logo-footer:hover .wsd-logo-blue {
+    color: var(--color-primary);
+}
+
+
+.wsd-footer-mission {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+.wsd-footer-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.wsd-footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wsd-footer-list li {
+    margin-bottom: 0.75rem;
+}
+
+.wsd-footer-link {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+.wsd-footer-link:hover {
+    color: var(--color-secondary);
+    opacity: 1;
+}
+
+.wsd-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+}
+
+.wsd-copyright {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}

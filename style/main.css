@@ -1,0 +1,148 @@
+/*
+|--------------------------------------------------------------------------
+| 1. VARIÁVEIS CSS (Tokens de Design)
+|--------------------------------------------------------------------------
+*/
+:root {
+    /* Cores de Marca (Confiabilidade e Curiosidade) */
+    --color-primary: #1e3a8a; /* Azul Escuro Confiável */
+    --color-secondary: #5b21b6; /* Roxo Profundo (Curiosidade/Digital) */
+    --color-accent: #059669; /* Verde (Crescimento/Bem-Estar) */
+    
+    /* Cores Neutras e Texto */
+    --color-bg-light: #f9fafb;
+    --color-bg-dark: #0f172a;
+    --color-text-default: #374151;
+    --color-text-light: #e5e7eb;
+    --color-text-muted: #6b7280;
+    --color-border: #e5e7eb;
+
+    /* Gradiente (Entusiasmo/Inovação) */
+    --gradient-brand: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    
+    /* Tipografia */
+    --font-family-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-size-base: 1rem;
+    --line-height-base: 1.6;
+    
+    /* Espaçamento e Borda */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+    --border-radius-default: 0.5rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2. RESET E NORMALIZE SIMPLIFICADO
+|--------------------------------------------------------------------------
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-default);
+    background-color: var(--color-bg-light);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 3. ESTILOS DE PADRONIZAÇÃO (Títulos, Textos, Container)
+|--------------------------------------------------------------------------
+*/
+/* Container Centralizador */
+.wsd-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    color: var(--color-bg-dark); /* Títulos em cor escura para contraste */
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+
+/* Texto de Parágrafo */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Utilitários Comuns */
+.text-center { text-align: center; }
+.text-gradient { 
+    background-image: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+.relative { position: relative; }
+.absolute { position: absolute; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.md-block { display: none; }
+.md-flex { display: none; }
+.md-hidden { display: block; }
+.md-grid-cols-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+.hidden{ display: none; }
+
+/* Media Queries para Padrões de Desktop */
+@media (min-width: 768px) {
+    .wsd-container {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .md-block { display: block; }
+    .md-flex { display: flex; }
+    .md-hidden { display: none; }
+    .md-flex-space-x-8 > * + * { margin-left: 2rem; }
+    .md-grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
