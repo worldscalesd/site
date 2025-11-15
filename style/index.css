@@ -74,8 +74,8 @@
 }
 
 .wsd-icon-arrow {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 5rem;
+    height: 5rem;
     color: var(--color-secondary);
     margin-left: 0.5rem;
 }
@@ -124,6 +124,11 @@
 
 @media (min-width: 768px) {
     .wsd-headline { font-size: 4.5rem; }
+
+    .wsd-icon-arrow {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 /*
@@ -399,6 +404,7 @@
 .wsd-cta-content {
     max-width: 700px;
     margin: 0 auto;
+    margin-top: 3em;
 }
 
 .wsd-cta-headline {
@@ -413,7 +419,7 @@
 }
 
 .wsd-cta-form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     border: 2px solid var(--color-primary);
     border-radius: 50px;
@@ -426,6 +432,10 @@
     background: white;
     color: var(--color-text-default);
     min-width: 0;
+}
+
+.wsd-sr-only{
+    padding: 0.8rem 1.5rem;
 }
 
 .wsd-form-button {

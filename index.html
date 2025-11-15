@@ -7,38 +7,8 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body class="wsd-body">
-
-    <!-- 1. Header Fixo e Navegação -->
-    <header class="wsd-header">
-        <nav class="wsd-container wsd-nav">
-            <a href="#" class="wsd-brand-logo text-gradient" aria-label="Página Inicial WorldscaleSD">
-                Worldscale<span class="wsd-logo-sd">SD</span>
-            </a>
-            
-            <!-- Menu Principal (Responsivo - Oculto em Mobile) -->
-            <div class="wsd-nav-menu md-flex md-flex-space-x-8">
-                <a href="#solucoes" class="wsd-nav-link">Soluções</a>
-                <a href="#jornada" class="wsd-nav-link">Nossa Jornada</a>
-                <a href="#empresa" class="wsd-nav-link hidden">A Empresa</a>
-                <a href="#contato" class="wsd-nav-link hidden">Contato</a>
-            </div>
-            
-            <!-- CTA Principal (Ação Rápida) -->
-            <a href="#" class="wsd-cta-main -md-block hidden" role="button">
-                Comece Agora
-            </a>
-
-            <!-- Botão de Menu Mobile (Ícone SVG) -->
-            <button class="wsd-mobile-menu-btn md-hidden" aria-label="Abrir Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="wsd-icon-menu" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </nav>
-    </header>
-
     <main>
-        <!-- 2. Banner Grande (Hero Section) - Atmosfera Agradável e Curiosidade -->
+        <!-- Banner Grande (Hero Section) - Atmosfera Agradável e Curiosidade -->
         <section id="hero" class="wsd-hero-section relative">
             <div class="wsd-container wsd-hero-content text-center">
                 <h1 class="wsd-headline">
@@ -50,7 +20,7 @@
                 </p>
                 <!-- Destaque para Promoção/Notícia (Banner) -->
                 <a href="https://play.google.com/store/apps/details?id=br.com.worldscalesd.memorygame" target="_blank">
-                    <div class="wsd-banner-promo flex items-center">
+                    <div class="wsd-banner-promo flex items-center wsd-pulsar">
                         <span class="wsd-promo-tag">NOVO</span>
                         <p class="wsd-promo-text">
                             Lançamento: <strong>Memory Game</strong> - Divirta-se e treine sua memória ao mesmo tempo!
@@ -68,7 +38,7 @@
             </div>
         </section>
 
-        <!-- 3. Seção Surpresa: Nossa Filosofia (Marca Forte e Confiável) -->
+        <!-- Seção Surpresa: Nossa Filosofia (Marca Forte e Confiável) -->
         <section id="philosophy" class="wsd-section-philosophy">
             <div class="wsd-container">
                 <h2 class="wsd-section-title text-center">Confiança e Escala Global</h2>
@@ -109,48 +79,45 @@
             </div>
         </section>
 
-        <!-- 4. Área de Aplicativos/Soluções (Requested) -->
+        <!-- Área de Aplicativos/Soluções (Requested) -->
         <section id="solucoes" class="wsd-section-solutions">
             <div class="wsd-container">
                 <h2 class="wsd-section-title text-center">Nossas Soluções Digitais</h2>
                 <p class="wsd-section-subtitle text-center">
-                    Desenvolvemos ferramentas para cada momento do seu dia, tornando a gestão pessoal e a produtividade algo natural.
+                    Desenvolvemos ferramentas para cada momento do seu dia, do lazer a gestão pessoal e assim ninguém se dá mal.
                 </p>
 
                 <!-- Grid de Produtos/Aplicativos -->
-                <div class="wsd-product-grid md-grid-cols-3 hidden">
+                <div class="wsd-product-grid md-grid-cols-3">
 
                     <!-- Cartão do Aplicativo 1: Entretenimento/Lazer -->
                     <article class="wsd-product-card wsd-product-playflow">
                         <header class="wsd-product-header flex items-center">
                             <div class="wsd-product-icon wsd-icon-red">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="wsd-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.876v4.248a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <img src="res/img/memoryGameIcon.png" alt="Ícone do jogo memory game para mobile android.">
                             </div>
-                            <h3 class="wsd-product-title">PlayFlow</h3>
+                            <h3 class="wsd-product-title">Memory Game</h3>
                         </header>
                         <p class="wsd-product-description">
-                            Sua central de lazer inteligente. Sugestões personalizadas de filmes, jogos e rotas de viagem para otimizar seu tempo livre.
+                            Você está pronto para desbloquear o poder total da sua mente? O Jogo da Memória é o desafio perfeito para aumentar sua concentração, melhorar sua velocidade de raciocínio e provar que sua memória é afiada como navalha. Transforme seu tempo livre em treinamento mental de forma divertida.
                         </p>
                         <ul class="wsd-specs-list">
                             <li class="wsd-specs-item flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="wsd-specs-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
-                                Recomendações por IA
+                                4 níveis de dificuldade
                             </li>
                             <li class="wsd-specs-item flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="wsd-specs-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
-                                Integração com Agenda
+                                Treinamento da memória
                             </li>
                         </ul>
-                        <a href="#" class="wsd-details-link">
-                            Ver Detalhes do PlayFlow &rarr;
+                        <a href="https://play.google.com/store/apps/details?id=br.com.worldscalesd.memorygame" target="_blank" class="wsd-details-link text-center ">
+                            Ver Detalhes do Memory Game &rarr;
                         </a>
                     </article>
 
                     <!-- Cartão do Aplicativo 2: Trabalho/Produtividade -->
-                    <article class="wsd-product-card wsd-product-taskmatrix">
+                    <article class="wsd-product-card wsd-product-taskmatrix hidden">
                         <header class="wsd-product-header flex items-center">
                             <div class="wsd-product-icon wsd-icon-blue-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="wsd-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -178,7 +145,7 @@
                     </article>
 
                     <!-- Cartão do Aplicativo 3: Gerenciamento Pessoal/Bem-Estar -->
-                    <article class="wsd-product-card wsd-product-lifesync">
+                    <article class="wsd-product-card wsd-product-lifesync hidden">
                         <header class="wsd-product-header flex items-center">
                             <div class="wsd-product-icon wsd-icon-green-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="wsd-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -208,7 +175,7 @@
             </div>
         </section>
 
-        <!-- 5. Seção Surpresa: A Jornada (O "Início ao Fim" da WorldscaleSD) -->
+        <!-- Seção Surpresa: A Jornada (O "Início ao Fim" da WorldscaleSD) -->
         <section id="jornada" class="wsd-section-journey">
             <div class="wsd-container wsd-journey-content text-center">
                 <span class="wsd-tagline">CONECTANDO PONTOS</span>
@@ -246,13 +213,21 @@
             </div>
         </section>
 
-
-        <!-- 6. Surpresa: CTA de Newsletter e Confiança -->
-        <section id="cta" class="wsd-section-cta">
+        <section id="contato" class="wsd-section-cta">
             <div class="wsd-container wsd-cta-content text-center">
+                <h2 class="wsd-cta-headline">Precisa entrar em contato para contratar algum serviço ou alguma outra necessidade?</h2>
+                <p class="wsd-cta-subhead">
+                    Envie um e-mail para <a href="mailto:worldscalesd@gmail.com" target="_blank"><em><strong>worldscalesd@gmail.com</strong></em></a>, especifique o assunto e descreva a sua necessidade que logo entraremos em contato.
+                </p>
+                
+            </div>
+
+            <div class="wsd-container wsd-cta-content text-center hidden">
                 <h2 class="wsd-cta-headline">Pronto para o Próximo Nível?</h2>
                 <p class="wsd-cta-subhead">
-                    Junte-se a milhares de usuários que já escalaram sua rotina com a WorldscaleSD.
+                    Junte-se aos usuários que já escalaram sua rotina com a WorldscaleSD. 
+                    <br>
+                    Inscreva-se e receba novas aplicações diretamente em seu e-mail.
                 </p>
                 <form class="wsd-cta-form flex">
                     <label for="email-cta" class="wsd-sr-only">Seu Email</label>
@@ -261,15 +236,16 @@
                            aria-label="Campo de E-mail">
                     
                     <button type="submit" class="wsd-form-button">
-                        Cadastrar e Receber Acesso
+                        Cadastrar
                     </button>
                 </form>
-                <p class="wsd-privacy-note">Nós prezamos pela sua privacidade. Sem spam.</p>
+                <p class="wsd-privacy-note">Nós prezamos pela sua privacidade e temos o compromisso de entregar conteúdo sem spam.</p>
             </div>
+
         </section>
     </main>
 
-    <!-- 7. Footer - Final Limpo e Completo -->
+    <!-- Footer - Final Limpo e Completo -->
     <footer class="wsd-footer">
         <div class="wsd-container wsd-footer-grid">
             
@@ -307,7 +283,6 @@
             <div class="wsd-footer-col">
                 <h4 class="wsd-footer-heading">Suporte</h4>
                 <ul class="wsd-footer-list">
-                    <li><a href="#" class="wsd-footer-link">Ajuda e FAQ</a></li>
                     <li><a href="#contato" class="wsd-footer-link">Fale Conosco</a></li>
                     <li><a href="https://worldscalesd.github.io/privacypolicy/privacypolice.html" target="_blank" class="wsd-footer-link">Política de Privacidade</a></li>
                 </ul>
@@ -319,5 +294,7 @@
             <p class="wsd-copyright">&copy; <time datetime="2025">2025</time> WorldscaleSD. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="js/menu.js" defer></script>
 </body>
 </html>

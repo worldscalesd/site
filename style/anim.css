@@ -1,0 +1,35 @@
+/* Pulsar */
+@keyframes smooth-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(30, 58, 138, 0.5); /* Sombra 0, 50% opacidade */
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(30, 58, 138, 0.0); /* Sombra 10px, 0% opacidade */
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| CLASSE WSD-PULSAR-SUAVE
+| Aplicada ao elemento, utiliza a sombra para o efeito.
+|--------------------------------------------------------------------------
+*/
+.wsd-pulsar {
+    /* Define a cor de fundo do elemento e transições de caixa para suavidade */
+    background-color: var(--color-primary, #1e3a8a);
+    color: var(--color-text-light, white);
+    border-radius: var(--border-radius-default, 0.5rem);
+    padding: 0.75rem 1.5rem; /* Exemplo de padding para um botão */
+    
+    /* Configurações da animação */
+    animation: smooth-pulse 1.5s infinite ease-in-out; /* 3 segundos, loop infinito, curva elegante */
+    
+    /* Garante que transições sejam suaves */
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s;
+    
+    /* Necessário para o efeito do box-shadow */
+    display: inline-flex;
+    position: relative;
+    z-index: 1; 
+}
