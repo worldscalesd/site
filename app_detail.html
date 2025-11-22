@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.: WorldscaleSD - <span class="appName"></span> :.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/app_detail.css"> <!-- Estilos específicos do módulo -->
+</head>
+<body class="wsd-body">
+
+    <main>
+        <!-- SEÇÃO PRINCIPAL (HERO DO APP) -->
+        <section class="wsd-app-hero wsd-container">
+            <div class="wsd-app-info">
+                <div class="wsd-app-icon-wrapper" id="appIcon"></div>
+                <h1 class="wsd-app-title"><span class="appName"></span></h1>
+                <p class="wsd-app-subtitle" id="appMessage"></p>
+                <div class="wsd-rating">
+                    <span id="appStars"></span>
+                    <span class="wsd-review-count" id="appReviewsCount"></span>
+                </div>
+            </div>
+            
+            <div class="wsd-app-description-container">
+                <p class="wsd-app-description" id="appDescription"></p>
+                <a href=# target="_blank" class="wsd-app-download-btn wsd-pulsar appURL">
+                    Download Gratuito
+                </a>
+                <p class="wsd-app-small-print" id="appDataAvailable"></p>
+            </div>
+        </section>
+
+        <!-- VÍDEO PROMOCIONAL E CARROSSEL -->
+        <section class="wsd-section-video wsd-container">
+            <h2 class="wsd-section-heading text-color-primary" id="appVideoTitle"></h2>
+            <div id="appVideoPlayer"></div>
+            
+            <!-- Carrossel de Fotos (Simples para 1-file) -->
+            <div class="wsd-carousel-container">
+                <h3 class="wsd-section-subheading" id="appImageTitle"></h3>
+                <div class="carrossel-main wsd-carousel-images" id="appImages"></div>
+                <!-- <p class="wsd-carousel-caption">Deslize para ver mais funcionalidades.</p> -->
+            </div>
+        </section>
+
+        <!-- PRIVACIDADE E CONTROLE DE DADOS -->
+        <section class="wsd-section-privacy wsd-container">
+            <h2 class="wsd-section-heading">Seu Controle. Sua Privacidade.</h2>
+            <p class="wsd-privacy-intro">Na WorldscaleSD, a confiança é o nosso produto principal. Entenda como o <span class="appName"></span> utiliza seus dados e como você pode gerenciá-los.</p>
+
+            <div class="wsd-privacy-grid md-grid-cols-3">
+                <!-- Permissões/Informações Coletadas -->
+                <div class="wsd-privacy-card">
+                    <h3 class="wsd-card-title">Permissões Necessárias</h3>
+                    <ul class="wsd-permission-list" id="appPermissionsList"></ul>
+                </div>
+
+                <!-- Uso de Informações -->
+                <div id="appDataUsage"></div>
+
+                <!-- Exclusão de Dados -->
+                <div id="appDeleteData"></div>
+            </div>
+        </section>
+        
+        <!-- REGISTRO DE VERSÕES E NOVIDADES -->
+        <section class="wsd-section-versions wsd-container">
+            <h2 class="wsd-section-heading">Histórico de Versões</h2>
+            <div class="wsd-version-timeline" id="appVersion"></div>
+        </section>
+        
+        <!-- BACKLOG E FUTURAS IMPLEMENTAÇÕES (NOVA SEÇÃO) -->
+        <div id="appBacklog"></div>
+
+        <!-- CHAMADA FINAL PARA AÇÃO -->
+        <section class="wsd-section-final-cta text-center">
+            <h2 class="wsd-final-cta-title text-3d" id="appFinalActionTitle"></h2>
+            <p class="wsd-final-cta-subtitle" id="appFinalActionText"></p>
+            <a href=# class="wsd-app-download-btn wsd-pulsar wsd-large-btn appURL" target="_blank" id="appFinalActionButton"></a>
+        </section>
+    </main>
+
+    <!-- Simulação do Modal de Confirmação (customizado, pois alert() é proibido) -->
+    <div id="delete-modal" class="wsd-modal">
+        <div class="wsd-modal-content">
+            <span class="wsd-close-btn">&times;</span>
+            <h3 class="wsd-modal-title wsd-text-error">Confirmação de Exclusão</h3>
+            <p>Você tem certeza que deseja excluir <b>TODOS</b> os seus dados do(a) <span class="appName"></span>? Esta ação é <b>irreversível</b>.</p>
+            <div class="wsd-modal-actions">
+                <button class="wsd-modal-cancel">Cancelar</button>
+                <button class="wsd-modal-confirm wsd-data-delete-btn">Excluir Permanentemente</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="scripts">
+        <script src="js/app_detail.js" defer></script>
+        <script src="js/util/JSON.js" defer></script>
+        <script src="js/menu.js" defer></script>
+        <script src="js/footer.js" defer></script>
+    </div>
+</body>
+</html>

@@ -34,14 +34,15 @@ class DynamicMenuInjector {
         return `
             <header class="wsd-header">
                 <nav class="wsd-container wsd-nav">
-                    <a href="#" class="wsd-brand-logo text-gradient" aria-label="Página Inicial WorldscaleSD">
+                    <a href="./index.html" class="wsd-brand-logo text-gradient" aria-label="Página Inicial WorldscaleSD">
                         Worldscale<span class="wsd-logo-sd">SD</span>
                     </a>
                     
                     <div class="wsd-nav-menu md-flex md-flex-space-x-8">
-                        <a href="#solucoes" class="wsd-nav-link">Soluções</a>
-                        <a href="#jornada" class="wsd-nav-link">Nosso Ecossistema</a>
-                        <a href="#contato" class="wsd-nav-link">Contato</a>
+                        <a href="./index.html" class="wsd-nav-link">&#x1F3E0</a>
+                        <a href="./index.html#solucoes" class="wsd-nav-link">Soluções</a>
+                        <a href="./index.html#jornada" class="wsd-nav-link">Nosso Ecossistema</a>
+                        <a href="./index.html#contato" class="wsd-nav-link">Contato</a>
                     </div>
                     
                     <button class="wsd-mobile-menu-btn md-hidden" aria-label="Abrir Menu" aria-expanded="false">
@@ -59,7 +60,7 @@ class DynamicMenuInjector {
      */
     renderMenu = () => {
         // Insere o HTML do menu como o primeiro filho do ponto de injeção (geralmente body)
-        this.injectionPoint.insertAdjacentHTML('afterbegin', this.getMenuHTML());
+        this.injectionPoint.insertAdjacentHTML('beforebegin', this.getMenuHTML());
     }
 
     /**
@@ -98,7 +99,7 @@ class DynamicMenuInjector {
 document.addEventListener('DOMContentLoaded', () => {
     // Configuração: Injetar no <body>, usando os seletores de classe do HTML original
     new DynamicMenuInjector(
-        'body',
+        'main',
         '.wsd-mobile-menu-btn',
         '.wsd-nav-menu',
         'is-active'

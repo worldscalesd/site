@@ -1,0 +1,88 @@
+{
+	"id":"MemoGame",
+	"icon":{
+		"url":"https://play-lh.googleusercontent.com/GoNSiXqGqwQmqv--frdvNMRUYnTu3XJO05m21E8XOg4Da_xS9ijNxdxPJ5RxI7SJRHO58mD3o77rOgUj4nkOow=w240-h480-rw",
+		"ariaLabel":"Ícone do jogo memory game."
+	},
+	"appName":"Memory Game",
+	"message":"Desbloqueie o poder da sua mente!",
+	"reviews": {
+		"star": 5,
+		"total": "10"
+	},
+	"text":"Você está pronto para desbloquear o poder total da sua mente? O Jogo da Memória é o desafio perfeito para aumentar sua concentração, melhorar sua velocidade de raciocínio e provar que sua memória é afiada como navalha. Transforme seu tempo livre em treinamento mental de forma divertida.",
+	"url": "https://play.google.com/store/apps/details?id=br.com.worldscalesd.memorygame",
+	"avaiable": "Disponível para Android. Com anúncios. Sem compras dentro do app.",
+	"image":{
+		"title":"Galeria de Imagens",
+		"images": [
+			{
+				"url":"https://play-lh.googleusercontent.com/vqwT8cwzp6R6xIRUqh6MJedXGTorbpEO3jkpGXxKYh_NATJ0onsH4n7aAg4pZY-5wOitE_ejLMOn5XyTVCZH=w2560-h1440-rw",
+				"ariaLabel":"Tela de escolha da dificuldade do jogo."
+			},
+			{
+				"url":"https://play-lh.googleusercontent.com/d90W82S43oYEdKPUMGBh9JassGhN6Db7Hi3Q4BXLNwHM89QJ4xlE6XPDXTSWAHP1lIbLgIBFML3W85fz3wmdcw=w2560-h1440-rw",
+				"ariaLabel":"Tela de início do jogo."
+			},
+			{
+				"url":"https://play-lh.googleusercontent.com/gPVHdBFM6c6tCdxwRVBrY-pL7PIm6e_I_AHz5LN90Ne5P8o7t7zb-GKIrCaoP7Jvx7TZWYzqzkD4M3LGEX8Awo0=w2560-h1440-rw",
+				"ariaLabel":"Tela com algumas jogadas."
+			},
+			{
+				"url":"https://play-lh.googleusercontent.com/gGweUrYPQmOJTDzq7pwYLJUr9w7N_QolPYTIvoQ3aEfKTM8PzviGcf9ex3AmQYCnl11pAhFUs-ysqPyBeWBvtQ=w2560-h1440-rw",
+				"ariaLabel":"Tela de fim do jogo."
+			}
+		]
+	},
+	"privacy": {
+		"permissions": [
+			{
+				"name":"Nenhuma",
+				"reason":"O Memory Game não necessita de permissões para ser utilizado."
+			}
+		]
+	},
+	"versions": [
+		{
+			"number": "1.1",
+			"date": "08 de Novembro, 2025",
+			"title": "Lançamento Principal: Memory Game 1.1",
+			"itens": [
+				"Interface simples e intuitiva.",
+				"Música ambiente e efeitos sonoros.",
+				"Base do jogo da memória."
+			]
+		}
+	],
+	"backlog": [
+		{
+			"title": "Adicionar um botão 'Fechar o jogo'",
+			"text": "Na tela de iniciar jogo, adicionar um botão para finalizar o jogo.",
+			"priority": "Baixa",
+			"status": "Em Desenvolvimento"
+		},
+		{
+			"title": "Virar cartas",
+			"text": "Ao iniciar um novo jogo, mostrar as cartas por até 1 segundo então ocultá-las novamente.",
+			"priority": "Média",
+			"status": "Em Desenvolvimento"
+		},
+		{
+			"title": "Botão de volume/Mutar",
+			"text": "Um botão para diminuir o volume ou desligar o som do jogo.",
+			"priority": "Média",
+			"status": "Em Desenvolvimento"
+		},
+		{
+			"title": "Correção do botão exibir anúncio",
+			"text": "Ao exibir a primeira tela com o botão exibir anúncio está sendo necessário clicar duas vezes antes que o mesmo seja exibido.",
+			"priority": "Baixa",
+			"status": "Em Desenvolvimento"
+		}
+	],
+	"finalAction": {
+		"title": "Pronto para treinar sua memória?",
+		"text": "Junte-se a outros usuários que estão exercitando a mente com o Memory Game.",
+		"buttonText": "Baixar Memory Game Agora"
+	}
+}

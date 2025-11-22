@@ -10,7 +10,7 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background-color: rgba(255, 255, 255, 0.95); /* Fundo semi-transparente */
+    background-color: var(--color-bg-dark);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--color-border);
     padding: var(--spacing-sm) 0;
@@ -92,7 +92,7 @@
     background: none;
     padding: 0.5rem;
     cursor: pointer;
-    color: var(--color-primary);
+    color: var(--color-text-light);
 }
 
 .wsd-icon-menu {
@@ -100,3 +100,80 @@
     height: 1.75rem;
 }
 
+/* O container do menu deve ser escondido em mobile por padrão */
+.wsd-nav-menu {
+    /* Por padrão, em mobile, o menu é escondido (display: none em 'main.css' ou aqui) */
+    display: none; 
+
+    /* Posição para descer do header */
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do cabeçalho */
+    left: 0;
+    width: 100%;
+    
+    /* Aparência */
+    background-color: var(--color-bg-light); /* Fundo claro para o menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+    /* Layout vertical */
+    flex-direction: column;
+    padding: var(--spacing-sm) 0;
+    z-index: 40; /* Abaixo do header fixo (z-index: 50) */
+}
+
+/* ** ESTILO ATIVO (Ativado pelo menu.js) ** */
+.wsd-nav-menu.is-active {
+    display: flex; /* Exibe o menu! */
+    /* Adicione uma transição suave, se desejar */
+    animation: slideDown 0.3s ease-out forwards; 
+}
+
+/* Animação opcional para uma abertura mais elegante */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilização dos itens de menu no modo ativo */
+.wsd-nav-menu .wsd-nav-link {
+    display: block;
+    width: 100%;
+    padding: 1rem var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    font-weight: 500;
+}
+
+.wsd-nav-menu .wsd-nav-link:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 768px) {
+    /* Garante que o menu esteja sempre visível e inline no desktop */
+    .wsd-nav-menu,
+    .wsd-nav-menu.is-active {
+        position: static;
+        display: flex !important; 
+        flex-direction: row;
+        box-shadow: none;
+        padding: 0;
+        background-color: transparent;
+
+        justify-content: end;
+    }
+    
+    .wsd-nav-menu .wsd-nav-link {
+        border-bottom: none;
+        padding: 0.5rem 0;
+        width: auto;
+    }
+
+    .wsd-nav-link{
+        color: var(--color-text-light);
+    }
+}

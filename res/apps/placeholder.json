@@ -1,0 +1,126 @@
+{
+	"id":"MemoGame",
+	"icon":{
+		"url":"https://play-lh.googleusercontent.com/GoNSiXqGqwQmqv--frdvNMRUYnTu3XJO05m21E8XOg4Da_xS9ijNxdxPJ5RxI7SJRHO58mD3o77rOgUj4nkOow=w240-h480-rw",
+		"ariaLabel":"Ícone do aplicativo memory game."
+	},
+	"appName":"Memory Game",
+	"message":"Desbloqueie o poder da sua mente!",
+	"reviews": {
+		"star": 5,
+		"total": "10"
+	},
+	"text":"Você está pronto para desbloquear o poder total da sua mente? O Jogo da Memória é o desafio perfeito para aumentar sua concentração, melhorar sua velocidade de raciocínio e provar que sua memória é afiada como navalha. Transforme seu tempo livre em treinamento mental de forma divertida.",
+	"url": "https://play.google.com/store/apps/details?id=br.com.worldscalesd.memorygame",
+	"avaiable": "Disponível para Android. Com anúncios.",
+	"video":{
+		"url":"https://www.youtube.com/embed/N6RsnQ2PmrY?si=07PzudRMts33X-cs",
+		"title":"Memory Game GamePlay! ",
+		"description":"Vídeo promocional do app."
+	},
+	"image":{
+		"title":"Galeria de Imagens",
+		"images": [
+			{
+				"url":"https://play-lh.googleusercontent.com/vqwT8cwzp6R6xIRUqh6MJedXGTorbpEO3jkpGXxKYh_NATJ0onsH4n7aAg4pZY-5wOitE_ejLMOn5XyTVCZH=w2560-h1440-rw",
+				"ariaLabel":"Tela de escolha da dificuldade do jogo."
+			},
+			{
+				"url":"https://play-lh.googleusercontent.com/d90W82S43oYEdKPUMGBh9JassGhN6Db7Hi3Q4BXLNwHM89QJ4xlE6XPDXTSWAHP1lIbLgIBFML3W85fz3wmdcw=w2560-h1440-rw",
+				"ariaLabel":"Tela de início do jogo."
+			},
+			{
+				"url":"https://play-lh.googleusercontent.com/gPVHdBFM6c6tCdxwRVBrY-pL7PIm6e_I_AHz5LN90Ne5P8o7t7zb-GKIrCaoP7Jvx7TZWYzqzkD4M3LGEX8Awo0=w2560-h1440-rw",
+				"ariaLabel":"Tela com algumas jogadas."
+			},
+			{
+				"url":"https://play-lh.googleusercontent.com/gGweUrYPQmOJTDzq7pwYLJUr9w7N_QolPYTIvoQ3aEfKTM8PzviGcf9ex3AmQYCnl11pAhFUs-ysqPyBeWBvtQ=w2560-h1440-rw",
+				"ariaLabel":"Tela de fim do jogo."
+			}
+		]
+	},
+	"privacy": {
+		"permissions": [
+			{
+				"name":"Nenhuma",
+				"reason":"O Memory Game não necessita de permissões para ser utilizado."
+			}
+		],
+		"dataUsage":{
+			"message":"<strong>NUNCA</strong> vendemos ou compartilhamos seus dados com terceiros para qualquer finalidade.",
+			"data":[
+					{
+						"name":"Nome de usuário e E-mail",
+						"reason":"Para login e recuperação."
+					},
+					{
+						"name":"Conteúdo das tarefas e metas",
+						"reason":"Criptografado para armazenamento em banco de dados."
+					},
+					{
+						"name":"Histórico de Hábitos",
+						"reason":"Para fornecer dicas personalizadas."
+					}
+				]
+		}
+	},
+	"versions": [
+		{
+			"number": "2.0.1",
+			"date": "10 de Outubro, 2025",
+			"title": "Novo Módulo de Foco Profundo",
+			"itens": [
+				"<span class='wsd-version-tag-new'>NOVO:</span> Integração com a técnica Pomodoro.",
+				"<span class='wsd-version-tag-fix'>FIX:</span> Correção de bugs na sincronização em segundo plano.",
+				"Melhorias na performance geral da interface."
+			]
+		},
+		{
+			"number": "2.0.0",
+			"date": "01 de Agosto, 2025",
+			"title": "Lançamento Principal: Memory Game 2.0",
+			"itens": [
+				"Interface totalmente redesenhada (UI/UX 2.0).",
+				"Adicionado rastreamento avançado de hábitos.",
+				"<span class='wsd-version-tag-new'>NOVO:</span> Introdução do modo escuro."
+			]
+		}
+	],
+	"backlog": [
+		{
+			"title": "Sincronização Bidirecional de Calendário",
+			"text": "Integração completa com Google Calendar e Outlook para que tarefas com data limite apareçam automaticamente em sua agenda.",
+			"priority": "Alta",
+			"status": "Em Planejamento"
+		},
+		{
+			"title": "Modo Colaboração",
+			"text": "Capacidade de compartilhar listas de tarefas e delegar itens para amigos ou membros da família dentro do aplicativo.",
+			"priority": "Média",
+			"status": "Em Desenvolvimento"
+		},
+		{
+			"title": "Relatórios de Produtividade Avançados",
+			"text": "Gráficos e insights semanais/mensais sobre o tempo gasto em tarefas e a consistência dos seus hábitos.",
+			"priority": "Média",
+			"status": "Pesquisa de UX"
+		},
+		{
+			"title": "Widgets Otimizados para iOS",
+			"text": "Desenvolvimento de novos widgets com mais opções de visualização e personalização para iOS 17 e superior.",
+			"priority": "Baixa",
+			"status": "Em Planejamento"
+		},
+		{
+			"title": "Modo Off-line Completo",
+			"text": "Melhoria na arquitetura para permitir que todas as funcionalidades principais funcionem totalmente off-line antes da sincronização.",
+			"priority": "Alta",
+			"status": "Em Desenvolvimento"
+		}
+	],
+	"finalAction": {
+		"title": "Pronto para treinar sua memória?",
+		"text": "Junte-se a outros usuários que estão exercitando a mente com o Memory Game.",
+		"buttonText": "Baixar Memory Game Agora"
+	}
+}
